@@ -1,23 +1,20 @@
-document.querySelector('.link-modal-img').addEventListener('click', () => {
-    document.body.innerHTML = `<!DOCTYPE html>
-                                <html lang="en">
-                                <head>
-                                    <meta charset="UTF-8">
-                                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                    <link rel="stylesheet" href="style.css">
-                                    <title>Document</title>
-                                </head>
-                                <body>
-                                    <div class="inside-modal">
+function DisplayPage() {    
+    document.querySelector('.link-modal-img').addEventListener('click', () => {
+        document.body.innerHTML = ` <div class="inside-modal">
                                         <div class="modal">
                                             <h1>Modal Project</h1>
                                             <button id="open-modal">OPEN MODAL</button>
                                         </div>
                                     </div>
+                                  `                      
+                                    modal();                         
+                                    
+    })
+                                
+}
 
-                                </body>
-                                </html>`
 
+function modal() {
         const modal = document.querySelector('.modal');
         document.querySelector('#open-modal').addEventListener('click', () => { 
 
@@ -27,11 +24,17 @@ document.querySelector('.link-modal-img').addEventListener('click', () => {
                                     <div>
                                     <h1>Modal Content</h1>
                                 </div>`
-
-
-            document.querySelector('.hiddenBtn').addEventListener('click', () => {
-                modal.innerHTML = ` <h1>Modal Project</h1>
-                                    <button id="open-modal">OPEN MODAL</button>`
-            })
+                                hiddenBtn();
         })
-})
+
+}
+
+function hiddenBtn() {
+    document.querySelector('.hiddenBtn').addEventListener('click', () => {
+        console.log('fgdgdfgsd');
+            DisplayPage();
+    })
+
+}
+
+DisplayPage();
