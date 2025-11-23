@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.link-modal img {
+    width: 400px;
+    border-radius: 12px;
+}
+
+div.link-modal img:hover {
+    width: 500px;
+    transition: width 0.3s ease;
+}
+
+/* COMMENT: style for second page */
+
+div.inside-modal {
+    background-image: url(photo-1526779259212-939e64788e3c.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.modal {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    height: 200px;
+    width: 400px;
+    border-radius: 16px;
+}
+
+button#open-modal {
+    background-color: rgb(145, 218, 218);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+}
