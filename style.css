@@ -53,3 +53,25 @@ button#open-modal {
     padding: 10px;
     border-radius: 6px;
 }
+
+div#styling {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    width: 400px;
+    border-radius: 16px;
+}
+
+div#styling div button {
+    color: red;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 30%;
+    position: relative;
+    left: 43em;
+    bottom: 70px;
+}
